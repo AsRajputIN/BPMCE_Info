@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#CAC9C9">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="#FF8656"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000000"
+                android:text="Information"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="14dp"/>
+
+            <LinearLayout
+                android:id="@+id/Linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="175dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="9dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+
+                    <TextView
+                        android:id="@+id/timetable"
+                        android:text="Time Table"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="175dp"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+                    <TextView
+                        android:id="@+id/Notice"
+                        android:text="Notice"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/Linear1"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_width="175dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+                    <TextView
+                        android:id="@+id/result"
+                        android:text="Result"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="175dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+                    <TextView
+                        android:id="@+id/collegeinfo"
+                        android:text="College Info"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/Linear2"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="175dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+                    <TextView
+                        android:id="@+id/Teacherinfo"
+                        android:text="Teacher Info"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="175dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bpmcelogo2"
+                        />
+                    <TextView
+                        android:id="@+id/placementinfo"
+                        android:text="Placement Info"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000000"
+                android:text="Club"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/Linear3"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="14dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearclub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/club"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/codingclub"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Coding club"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sportsclub"
+                    android:layout_width="115dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Sports club"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nature"
+                    android:layout_width="115dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Nature"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearclub2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/linearclub"
+                android:padding="7dp"
+                android:paddingBottom="12dp"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/invotionclub"
+                    android:layout_width="115dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <TextView
+                        android:text="Invotion Club"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hackingclub"
+                    android:layout_width="115dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp">
+                    <TextView
+                        android:text="StartUp club"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/art"
+                    android:layout_width="115dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Art Club"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textsyllbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000000"
+                android:text="Syllabus"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/Linearclub2"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="9dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearsyllbus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/club"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CSE"
+                    android:layout_width="155dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="9dp"
+                    >
+                    <TextView
+                        android:text="CSE"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Civil"
+                    android:layout_width="155dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Civil"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearsyllbus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="19dp"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@+id/club"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Mech"
+                    android:layout_width="155dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="Mech"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/EEE"
+                    android:layout_width="155dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="9dp" >
+                    <TextView
+                        android:text="EEE"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
