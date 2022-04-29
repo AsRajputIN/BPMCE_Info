@@ -7,6 +7,7 @@
     tools:context=".Home"
     android:background="#CAC9C9">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/toolbar1"
         android:layout_width="match_parent"
@@ -21,88 +22,94 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
+
+
+
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar1"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
                 android:shadowColor="#000000"
                 android:text="Information"
                 android:textColor="#000000"
                 android:textSize="34sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="14dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/Linear1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
                 android:layout_below="@+id/textView2"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card1"
+                    android:id="@+id/timetablecard"
                     android:layout_width="175dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="160dp"
+                    app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="17dp"
+                        android:src="@drawable/time_table" />
 
                     <TextView
                         android:id="@+id/timetable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Time Table"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
 
-
-
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card2"
+                    android:id="@+id/noticecard"
                     android:layout_width="175dp"
                     android:layout_height="160dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/notice" />
+
                     <TextView
                         android:id="@+id/Notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Notice"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
@@ -112,60 +119,61 @@
                 android:id="@+id/Linear2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="11dp"
                 android:layout_below="@+id/Linear1"
+                android:layout_marginTop="11dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card3"
-                    app:cardBackgroundColor="@color/white"
+                    android:id="@+id/resultcard"
                     android:layout_width="175dp"
                     android:layout_height="160dp"
-                    app:cardCornerRadius="9dp"
-                    >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/result" />
+
                     <TextView
                         android:id="@+id/result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Result"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card4"
+                    android:id="@+id/collegeinfocard"
                     android:layout_width="175dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="160dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp"
-                    >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="19dp"
+                        android:src="@drawable/college_info" />
+
                     <TextView
                         android:id="@+id/collegeinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="College Info"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -174,60 +182,62 @@
                 android:id="@+id/Linear3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="11dp"
                 android:layout_below="@+id/Linear2"
+                android:layout_marginTop="11dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card5"
+                    android:id="@+id/teacherinfocard"
                     android:layout_width="175dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="160dp"
-                    app:cardCornerRadius="9dp"
-                    >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="28dp"
+                        android:src="@drawable/teacher_info" />
+
                     <TextView
                         android:id="@+id/Teacherinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Teacher Info"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card6"
+                    android:id="@+id/placementinfocard"
                     android:layout_width="175dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="160dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp"
-                    >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/bpmcelogo2"
-                        />
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/placement_info" />
+
                     <TextView
                         android:id="@+id/placementinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Placement Info"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="23dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -236,78 +246,104 @@
                 android:id="@+id/textclub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear3"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="12dp"
                 android:shadowColor="#000000"
                 android:text="Club"
-                android:layout_marginTop="12dp"
                 android:textColor="#000000"
-                android:layout_below="@+id/Linear3"
                 android:textSize="34sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="14dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/linearclub"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
                 android:layout_below="@+id/club"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/codingclub"
                     android:layout_width="115dp"
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="9dp" >
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/coding_club"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Coding club"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/sportsclub"
                     android:layout_width="115dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="120dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/sports_club"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Sports club"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/nature"
                     android:layout_width="115dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="120dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/nature_club"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Nature"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -316,68 +352,93 @@
                 android:id="@+id/linearclub2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
                 android:layout_below="@+id/linearclub"
-                android:padding="7dp"
-                android:paddingBottom="12dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:paddingBottom="12dp">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/invotionclub"
                     android:layout_width="115dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="120dp"
-                    app:cardCornerRadius="9dp"
-                    >
-                    <TextView
-                        android:text="Invotion Club"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="17dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/innovation"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Innovation Club"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/hackingclub"
                     android:layout_width="115dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="120dp"
                     android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/startup"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="StartUp club"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/art"
                     android:layout_width="115dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="120dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/art_club"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Art Club"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -386,60 +447,75 @@
                 android:id="@+id/textsyllbus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/Linearclub2"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="12dp"
                 android:shadowColor="#000000"
                 android:text="Syllabus"
-                android:layout_marginTop="12dp"
                 android:textColor="#000000"
-                android:layout_below="@+id/Linearclub2"
                 android:textSize="34sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="9dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/linearsyllbus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
                 android:layout_below="@+id/club"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/CSE"
                     android:layout_width="155dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="140dp"
-                    app:cardCornerRadius="9dp"
-                    >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/cse"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="CSE"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="22dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Civil"
                     android:layout_width="155dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="140dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/civil"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Civil"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="22dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -448,54 +524,70 @@
                 android:id="@+id/linearsyllbus2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
-                android:paddingBottom="19dp"
-                android:layout_marginBottom="12dp"
                 android:layout_below="@+id/club"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
                 android:gravity="center"
-                >
+                android:orientation="horizontal"
+                android:paddingBottom="19dp">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Mech"
                     android:layout_width="155dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="140dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/mech"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="Mech"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="22dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/EEE"
                     android:layout_width="155dp"
-                    app:cardBackgroundColor="@color/white"
                     android:layout_height="140dp"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="9dp" >
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/electrical"
+                        />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
                         android:text="EEE"
-                        android:textStyle="bold"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="22dp"
-                        android:gravity="bottom"
-                        android:textAlignment="center"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
+                        android:textStyle="bold"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>
