@@ -12,6 +12,13 @@ public class Civil_syllabus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_civil_syllabus);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar()!=null){
+            getSupportActionBar().setTitle("College Info");
+        }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
     }
 }

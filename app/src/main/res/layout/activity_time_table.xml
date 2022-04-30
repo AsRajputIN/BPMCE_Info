@@ -21,4 +21,141 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <LinearLayout
+        android:layout_below="@+id/toolbar1"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/messtb"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="19dp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:text="Mess Time Table" />
+
+        <LinearLayout
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/messtb1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="19dp"
+                android:layout_width="380dp"
+                android:layout_height="57dp"
+                android:text="Mess Time Table" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/s1tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="1st Sem Time Table" />
+
+        <Button
+            android:id="@+id/s2tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="2nd Sem Time Table" />
+
+        <Button
+            android:id="@+id/s3tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="3rd Sem Time Table" />
+
+        <Button
+            android:id="@+id/s4tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="4th Sem Time Table" />
+
+        <Button
+            android:id="@+id/s5tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="5th Sem Time Table" />
+
+        <Button
+            android:id="@+id/s6tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="6th Sem Time Table" />
+
+        <Button
+            android:id="@+id/s7tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="7th Sem Time Table" />
+
+        <Button
+            android:id="@+id/s8tb"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="380dp"
+            android:layout_height="57dp"
+            android:text="8th Sem Time Table" />
+    </LinearLayout>
+
+
 </RelativeLayout>
